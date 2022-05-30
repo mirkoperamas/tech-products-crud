@@ -22,7 +22,7 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const navigate = useNavigate();
 
-  const signup = async (email, password) => {
+  const userSignup = async (email, password) => {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
       navigate("/");
@@ -31,7 +31,7 @@ export function AuthProvider({ children }) {
     }
   };
 
-  const login = async (email, password) => {
+  const userLogin = async (email, password) => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       navigate("/user-products");
@@ -51,7 +51,7 @@ export function AuthProvider({ children }) {
     }
   };
 
-  const logout = async () => {
+  const userLogout = async () => {
     try {
       await signOut(auth);
       navigate("/");
@@ -68,7 +68,7 @@ export function AuthProvider({ children }) {
 
   return (
     <authContext.Provider
-      value={{ signup, login, user, logout, loginWithGoogle }}
+      value={{ userSignup, userLogin, user, userLogout, loginWithGoogle }}
     >
       {children}
     </authContext.Provider>

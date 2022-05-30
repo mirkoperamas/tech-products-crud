@@ -18,7 +18,7 @@ export const Register = () => {
     password: "",
   });
 
-  const { signup } = useAuth();
+  const { userSignup } = useAuth();
 
   const handleChange = ({ target: { name, value } }) => {
     setUser({ ...user, [name]: value });
@@ -26,7 +26,7 @@ export const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    signup(user.email, user.password);
+    userSignup(user.email, user.password);
   };
 
   return (

@@ -20,7 +20,7 @@ export const Login = () => {
     password: "",
   });
 
-  const { login, loginWithGoogle } = useAuth();
+  const { userLogin, loginWithGoogle } = useAuth();
 
   const handleChange = ({ target: { name, value } }) => {
     setUser({ ...user, [name]: value });
@@ -28,7 +28,7 @@ export const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    login(user.email, user.password);
+    userLogin(user.email, user.password);
   };
 
   const handleGoogleSignin = () => {

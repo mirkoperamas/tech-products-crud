@@ -21,8 +21,9 @@ const Background = styled.div`
 
 const Credits = styled.p`
   position: absolute;
-  bottom: 0;
+  bottom: 2%;
   color: #00000051;
+  font-size: 13px;
   & a {
     cursor: pointer;
     text-decoration: none;

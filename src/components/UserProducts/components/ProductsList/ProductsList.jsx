@@ -99,10 +99,9 @@ export const ProductsList = ({
                     </div>
                   </div>
                   <ButtonsModifyDataBox>
-                    {/* <div title="edit" onClick={viewEditComponent}> */}
-                    <div title="edit" onClick={() => editRegister(registerObj)}>
+                    {/* <div title="edit" onClick={() => editRegister(registerObj)}>
                       <div className="edit"></div>
-                    </div>
+                    </div> */}
                     <div
                       onClick={() => deleteRegister(registerObj.id)}
                       title="trash"
@@ -116,7 +115,7 @@ export const ProductsList = ({
           </>
         )}
 
-        {test && (
+        {/* {test && (
           <EditProduct
             userEmail={userEmail}
             setRegistersArray={setRegistersArray}
@@ -124,7 +123,7 @@ export const ProductsList = ({
             test={test}
             setTest={setTest}
           />
-        )}
+        )} */}
       </div>
     </>
   );

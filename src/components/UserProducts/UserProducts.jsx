@@ -15,7 +15,7 @@ import { AddProduct } from "./components/AddProduct/AddProduct";
 import { ProductsList } from "./components/ProductsList/ProductsList";
 
 export const UserProducts = () => {
-  const { user, logout } = useAuth();
+  const { user, userLogout } = useAuth();
 
   const firestore = getFirestore(app);
 
@@ -23,7 +23,7 @@ export const UserProducts = () => {
   const [openListProducts, setOpenListProducts] = useState(false);
 
   const handleLogout = () => {
-    logout();
+    userLogout();
   };
 
   const initial = [];
