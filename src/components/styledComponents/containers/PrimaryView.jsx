@@ -15,7 +15,7 @@ const FormContent = styled.main`
   align-items: center;
 `;
 
-const Main = styled.div`
+const Ajust = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -37,6 +37,7 @@ export const Subtitle = styled.div`
   }
   & h3 {
     width: 100%;
+    color: #00000071;
     font-size: 13px;
     text-align: center;
     margin: 2rem 0rem;
@@ -55,41 +56,10 @@ export const Message = styled.div`
   }
 `;
 
-export const GoogleButton = styled.button`
-  outline: none;
-  background: linear-gradient(145deg, #ec4336, #c7392d);
-  font-size: 11px;
-  font-weight: bold;
-  color: #fff;
-  text-shadow: 0.5px 0.5px 0.5px #000;
-  padding: 0.5rem 1rem;
-  border: 0;
-  text-transform: uppercase;
-  text-align: center;
-  border-radius: 3px;
-  cursor: pointer;
-`;
-export const FormButton = styled.button`
-  outline: none;
-  background: linear-gradient(145deg, #079bab, #068390);
-  font-size: 11px;
-  font-weight: bold;
-  color: #fff;
-  text-shadow: 0.5px 0.5px 0.5px #000;
-  padding: 0.5rem 1rem;
-  border: 0;
-  text-transform: uppercase;
-  text-align: center;
-  border-radius: 3px;
-  cursor: pointer;
-`;
-
-export const CardContainer = ({ children }) => {
+export const PrimaryView = ({ children }) => {
   return (
-    <>
-      <FormContent>
-        <Main>{children}</Main>
-      </FormContent>
-    </>
+    <FormContent>
+      <Ajust>{children}</Ajust>
+    </FormContent>
   );
 };

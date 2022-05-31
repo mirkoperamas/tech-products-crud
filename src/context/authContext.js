@@ -27,7 +27,7 @@ export function AuthProvider({ children }) {
       await createUserWithEmailAndPassword(auth, email, password);
       navigate("/");
     } catch (err) {
-      console.log(err.message);
+      console.error(err.message);
     }
   };
 
@@ -35,9 +35,8 @@ export function AuthProvider({ children }) {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       navigate("/user-products");
-      console.log(email);
     } catch (err) {
-      console.log(err.message);
+      console.error(err.message);
     }
   };
 
@@ -47,7 +46,7 @@ export function AuthProvider({ children }) {
       await signInWithPopup(auth, googleProvider);
       navigate("/user-products");
     } catch (err) {
-      console.log(err);
+      console.error(err.message);
     }
   };
 
@@ -56,7 +55,7 @@ export function AuthProvider({ children }) {
       await signOut(auth);
       navigate("/");
     } catch (err) {
-      console.log(err.message);
+      console.error(err.message);
     }
   };
 

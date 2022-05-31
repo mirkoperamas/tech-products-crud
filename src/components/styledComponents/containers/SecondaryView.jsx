@@ -10,7 +10,6 @@ const UProductsContent = styled.main`
   border-radius: 10px;
   overflow-y: hidden;
   overflow-x: hidden;
-  /* box-sizing: border-box; */
   box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
@@ -27,7 +26,7 @@ const UProductsContent = styled.main`
   }
 `;
 
-const Main = styled.div`
+const Ajust = styled.div`
   width: 100%;
 
   @media (min-width: 1000px) {
@@ -55,35 +54,6 @@ export const TextAction = styled.p`
   font-weight: bold;
 `;
 
-export const ButtonsBox = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  & button {
-    margin-bottom: 0.5rem;
-    outline: none;
-    background: linear-gradient(145deg, #079bab, #068390);
-    font-size: 11px;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 0.5px 0.5px 0.5px #000;
-    padding: 0.5rem 1rem;
-    border: 0;
-    text-transform: uppercase;
-    text-align: center;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-`;
-
-export const LogoutButton = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: black !important;
-`;
-
 export const TitleProductsList = styled.div`
   display: flex;
   align-items: center;
@@ -99,7 +69,7 @@ export const TitleProductsList = styled.div`
   }
 `;
 
-export const ProductContent = styled.div`
+export const ProductCard = styled.div`
   box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.5);
   margin-bottom: 0.5rem;
   border-radius: 5px;
@@ -111,13 +81,11 @@ export const ProductContent = styled.div`
   & > div {
     display: grid;
     grid-template-columns: 1.3fr 0.7fr;
-    /* border: 1px solid red; */
     & > div {
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      /* border: 1px solid brown; */
     }
   }
 `;
@@ -162,35 +130,7 @@ export const ProductImage = styled.div`
   }
 `;
 
-export const ButtonsModifyDataBox = styled.div`
-  margin: 0.5rem 0;
-  display: flex !important;
-
-  & > div {
-    width: 2.5rem !important;
-    height: 2.5rem !important;
-    border-radius: 50%;
-    background: linear-gradient(145deg, #ffffff, #e3e3e3);
-    box-shadow: 20px 20px 60px #d6d6d6, -20px -20px 60px #ffffff;
-    outline: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 1.5rem;
-
-    & > div {
-      margin: 0 auto;
-    }
-
-    &:hover {
-      background: linear-gradient(145deg, #e3e3e3, #ffffff);
-      box-shadow: 20px 20px 60px #d6d6d6, -20px -20px 60px #ffffff;
-    }
-  }
-`;
-
-export const TitleAddProduct = styled.div`
+export const TitleSubLinks = styled.div`
   display: flex;
   align-items: center;
   & hr {
@@ -205,7 +145,7 @@ export const TitleAddProduct = styled.div`
   }
 `;
 
-export const InputAddBox = styled.div`
+export const InputBox = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -222,7 +162,7 @@ export const MainContainer = ({ children }) => {
     <>
       <UProductsContent>
         <div>
-          <Main>{children}</Main>
+          <Ajust>{children}</Ajust>
         </div>
       </UProductsContent>
     </>

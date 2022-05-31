@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/authContext";
-import {
-  CardContainer,
-  Title,
-  Subtitle,
-  Message,
-  GoogleButton,
-  FormButton,
-} from "../../containers/CardContainer";
-
 import "../../styles/main.css";
+import { PrimaryButton, SecondaryButton } from "../styledComponents/buttons";
+import {
+  Message,
+  PrimaryView,
+  Subtitle,
+  Title,
+} from "../styledComponents/containers/PrimaryView";
 
 export const Login = () => {
   const navigate = useNavigate();
@@ -37,16 +35,16 @@ export const Login = () => {
 
   return (
     <>
-      <CardContainer>
-        <Title>Products</Title>
+      <PrimaryView>
+        <Title>Tech Products</Title>
         <Subtitle>
           <hr />
           <h3>Sign in</h3>
           <hr />
         </Subtitle>
-        <GoogleButton onClick={handleGoogleSignin}>
-          Continue with google →
-        </GoogleButton>
+        <SecondaryButton onClick={handleGoogleSignin}>
+          Continue with google
+        </SecondaryButton>
         <Subtitle>
           <hr />
           <h3>or use email</h3>
@@ -71,7 +69,7 @@ export const Login = () => {
             className="inputStyle"
           />
 
-          <FormButton>Sign in</FormButton>
+          <PrimaryButton>Sign in</PrimaryButton>
         </form>
         <Message>
           <p>
@@ -79,7 +77,7 @@ export const Login = () => {
             <strong onClick={() => navigate("/register")}> Sign Up</strong>
           </p>
         </Message>
-      </CardContainer>
+      </PrimaryView>
     </>
   );
 };

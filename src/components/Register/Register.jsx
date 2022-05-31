@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/authContext";
-import {
-  CardContainer,
-  Title,
-  Message,
-  FormButton,
-} from "../../containers/CardContainer";
-
 import "../../styles/main.css";
+import { PrimaryButton } from "../styledComponents/buttons";
+import {
+  Message,
+  PrimaryView,
+  Title,
+} from "../styledComponents/containers/PrimaryView";
 
 export const Register = () => {
   const navigate = useNavigate();
@@ -31,7 +30,7 @@ export const Register = () => {
 
   return (
     <>
-      <CardContainer>
+      <PrimaryView>
         <Title>Products</Title>
         <form onSubmit={handleSubmit} className="formStyle">
           <input
@@ -51,7 +50,7 @@ export const Register = () => {
             className="inputStyle"
           />
 
-          <FormButton>Sign up</FormButton>
+          <PrimaryButton>Sign up</PrimaryButton>
         </form>
         <Message>
           <p>
@@ -59,7 +58,7 @@ export const Register = () => {
             <strong onClick={() => navigate("/")}> Sign in</strong>
           </p>
         </Message>
-      </CardContainer>
+      </PrimaryView>
     </>
   );
 };
