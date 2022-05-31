@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/tech-registration-system/static/css/main.087edabb.css",
+    "main.js": "/tech-registration-system/static/js/main.3b5dd4b4.js",
+    "static/media/background.jpg": "/tech-registration-system/static/media/background.2adf790efbf7e79acff5.jpg",
+    "static/media/camara.png": "/tech-registration-system/static/media/camara.aca084eb1423b7a86333.png",
+    "static/media/trash.png": "/tech-registration-system/static/media/trash.fa7887ac547cd590dcbf.png",
+    "index.html": "/tech-registration-system/index.html",
+    "main.087edabb.css.map": "/tech-registration-system/static/css/main.087edabb.css.map",
+    "main.3b5dd4b4.js.map": "/tech-registration-system/static/js/main.3b5dd4b4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.087edabb.css",
+    "static/js/main.3b5dd4b4.js"
+  ]
+}
