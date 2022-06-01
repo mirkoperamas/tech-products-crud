@@ -108,11 +108,11 @@ export const ProductsList = () => {
                   </div>
                 </div>
                 <ListButtons>
-                  <div title="edit">
-                    <Link to={`/user-products/list/${product.id}`}>
+                  <Link to={`/user-products/list/${product.id}`}>
+                    <div title="edit">
                       <div className="edit"></div>
-                    </Link>
-                  </div>
+                    </div>
+                  </Link>
                   <div onClick={() => confirmDelete(product.id)} title="trash">
                     <div className="trash"></div>
                   </div>

@@ -50,7 +50,8 @@ export const ListButtons = styled.div`
   margin: 0.5rem 0;
   display: flex !important;
 
-  & > div {
+  & > div,
+  a {
     width: 2.5rem !important;
     height: 2.5rem !important;
     border-radius: 50%;
