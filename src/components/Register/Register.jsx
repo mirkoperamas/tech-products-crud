@@ -31,7 +31,7 @@ export const Register = () => {
   return (
     <>
       <PrimaryView>
-        <Title>Products</Title>
+        <Title>Tech Products</Title>
         <form onSubmit={handleSubmit} className="formStyle">
           <input
             type="email"
