@@ -5,6 +5,7 @@ import "../../styles/main.css";
 import { PrimaryButton, SecondaryButton } from "../styledComponents/buttons";
 import {
   Message,
+  MobileViewAjust,
   PrimaryView,
   Subtitle,
   Title,
@@ -37,14 +38,16 @@ export const Login = () => {
     <>
       <PrimaryView>
         <Title>Tech Products</Title>
-        <Subtitle>
-          <hr />
-          <h3>Sign in</h3>
-          <hr />
-        </Subtitle>
-        <SecondaryButton onClick={handleGoogleSignin}>
-          Continue with google
-        </SecondaryButton>
+        <MobileViewAjust>
+          <Subtitle>
+            <hr />
+            <h3>Sign in</h3>
+            <hr />
+          </Subtitle>
+          <SecondaryButton onClick={handleGoogleSignin}>
+            Continue with google
+          </SecondaryButton>
+        </MobileViewAjust>
         <Subtitle>
           <hr />
           <h3>or use email</h3>

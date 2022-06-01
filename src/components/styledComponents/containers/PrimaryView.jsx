@@ -55,6 +55,13 @@ export const Message = styled.div`
     cursor: pointer;
   }
 `;
+export const MobileViewAjust = styled.div`
+  display: none;
+
+  @media (min-width: 1000px) {
+    display: block;
+  }
+`;
 
 export const PrimaryView = ({ children }) => {
   return (
