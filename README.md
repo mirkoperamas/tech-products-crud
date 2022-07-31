@@ -18,7 +18,7 @@ TODO list style tech product registration system with the functions of creating,
 
 ### Deployed:
 
-###### — View page on [StackBlitz.](https://mirkoperamas.github.io/tech-products-crud)
+###### — View page on [Github Pages.](https://mirkoperamas.github.io/tech-products-crud)
 
 <br />
 
