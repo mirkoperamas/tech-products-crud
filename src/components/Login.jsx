@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../../context/authContext";
-import "../../styles/main.css";
-import { PrimaryButton, SecondaryButton } from "../styledComponents/buttons";
+import { useAuth } from "../context/authContext";
+import "../styles/main.css";
+import { PrimaryButton, SecondaryButton } from "./styledComponents/buttons";
 import {
   Message,
   MobileViewAjust,
   PrimaryView,
   Subtitle,
   Title,
-} from "../styledComponents/containers/PrimaryView";
+} from "./styledComponents/containers/PrimaryView";
 
 export const Login = () => {
   const navigate = useNavigate();

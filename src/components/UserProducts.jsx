@@ -1,16 +1,16 @@
 import React from "react";
-import { useAuth } from "../../context/authContext";
+import { useAuth } from "../context/authContext";
 import {
   PrimaryButton,
   ButtonsBox,
   DangerButton,
-} from "../styledComponents/buttons";
+} from "./styledComponents/buttons";
 import {
   MainContainer,
   TextRegister,
   TextAction,
-} from "../styledComponents/containers/SecondaryView";
-import "../../styles/main.css";
+} from "./styledComponents/containers/SecondaryView";
+import "../styles/main.css";
 
 import { Link } from "react-router-dom";
 

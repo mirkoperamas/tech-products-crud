@@ -14,7 +14,7 @@ TODO list style tech product registration system with the functions of creating,
 ### Run Project:
 
     yarn
-    yarn dev
+    yarn start
 
 ### Deployed:
 

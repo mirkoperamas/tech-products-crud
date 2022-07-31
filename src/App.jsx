@@ -2,12 +2,20 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider } from "./context/authContext";
 import { SecureRoutes } from "./containers/SecureRoutes";
-import { Login } from "./components/Login/Login";
-import { Register } from "./components/Register/Register";
-import { AddProduct } from "./components/AddProduct/AddProduct";
-import { EditProduct } from "./components/EditProduct/EditProduct";
-import { ProductsList } from "./components/ProductsList/ProductsList";
-import { UserProducts } from "./components/UserProducts/UserProducts";
+// import { Login } from "./components/Login/Login";
+// import { Register } from "./components/Register/Register";
+// import { AddProduct } from "./components/AddProduct/AddProduct";
+// import { EditProduct } from "./components/EditProduct/EditProduct";
+// import { ProductsList } from "./components/ProductsList/ProductsList";
+// import { UserProducts } from "./components/UserProducts/UserProducts";
+import {
+  Login,
+  Register,
+  AddProduct,
+  EditProduct,
+  ProductsList,
+  UserProducts,
+} from "./components";
 import { Background, Credits } from "./components/styledComponents/main";
 
 export const App = () => {
@@ -53,7 +61,11 @@ export const App = () => {
         </Routes>
         <Credits>
           Designed by{" "}
-          <a href="https://www.linkedin.com/in/mirkoperamas/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/mirkoperamas/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Mirko Peramas
           </a>{" "}
           | MPeardev &copy; 2022

@@ -1,26 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { updateDoc, doc, getDoc } from "firebase/firestore";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import {
   PrimaryButton,
   ButtonsBox,
   DangerButton,
-} from "../styledComponents/buttons";
+} from "./styledComponents/buttons";
 import {
   TitleSubLinks,
   InputBox,
   MainContainer,
-} from "../styledComponents/containers/SecondaryView";
-import "../../styles/main.css";
+} from "./styledComponents/containers/SecondaryView";
+import "../styles/main.css";
 
 import { getStorage, ref, getDownloadURL, uploadBytes } from "firebase/storage";
-import { app, db } from "../../firebase/firebase.config";
-
-import { useAuth } from "../../context/authContext";
-
+import { app, db } from "../firebase/firebase.config";
+import { useAuth } from "../context/authContext";
 import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
-const MySwal = withReactContent(Swal);
 
 const storage = getStorage(app);
 
@@ -76,9 +72,7 @@ export const EditProduct = () => {
     }
   };
 
-  useEffect(() => {
-    getProductById(id);
-  }, [id]);
+  getProductById(id);
 
   return (
     <>

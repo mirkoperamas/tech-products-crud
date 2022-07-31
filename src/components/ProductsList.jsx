@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   NoFiles,
   TitleProductsList,
@@ -6,18 +6,16 @@ import {
   ProductInfo,
   MainContainer,
   ProductImage,
-} from "../styledComponents/containers/SecondaryView";
-import "../../styles/main.css";
+} from "./styledComponents/containers/SecondaryView";
+import "../styles/main.css";
 
 import { doc, collection, getDocs, deleteDoc } from "firebase/firestore";
-import { db } from "../../firebase/firebase.config";
+import { db } from "../firebase/firebase.config";
 import { Link } from "react-router-dom";
 
 import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
-import { useAuth } from "../../context/authContext";
-import { DangerButton, ListButtons } from "../styledComponents/buttons";
-const MySwal = withReactContent(Swal);
+import { useAuth } from "../context/authContext";
+import { DangerButton, ListButtons } from "./styledComponents/buttons";
 
 export const ProductsList = () => {
   const { user } = useAuth();
@@ -30,6 +28,8 @@ export const ProductsList = () => {
     const data = await getDocs(productsCollection);
     setProducts(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
   };
+  getProducts();
+
   const deleteProduct = async (id) => {
     const productDoc = doc(db, userEmail, id);
     await deleteDoc(productDoc);
@@ -52,10 +52,6 @@ export const ProductsList = () => {
     });
   };
 
-  useEffect(() => {
-    getProducts();
-  });
-
   return (
     <MainContainer>
       <div>
@@ -65,7 +61,7 @@ export const ProductsList = () => {
             <h3>Products List</h3>
             <hr />
           </TitleProductsList>
-          {products == "" && <NoFiles>No Files</NoFiles>}
+          {products.length === 0 && <NoFiles>No Files</NoFiles>}
           {products.map((product) => {
             return (
               <ProductCard key={product.id}>
@@ -98,11 +94,8 @@ export const ProductsList = () => {
                   </ProductInfo>
                   <div>
                     <ProductImage>
-                      <a href={product.url} target="_blank">
-                        <img
-                          src={`${product.url}.png`}
-                          alt={`image-${product.id}`}
-                        />
+                      <a href={product.url} target="_blank" rel="noreferrer">
+                        <img src={`${product.url}.png`} alt={product.i} />
                       </a>
                     </ProductImage>
                   </div>

@@ -4,23 +4,20 @@ import {
   ButtonsBox,
   DangerButton,
   PrimaryButton,
-} from "../styledComponents/buttons";
+} from "./styledComponents/buttons";
 import {
   TitleSubLinks,
   InputBox,
   MainContainer,
-} from "../styledComponents/containers/SecondaryView";
-import "../../styles/main.css";
+} from "./styledComponents/containers/SecondaryView";
+import "../styles/main.css";
 
 import { getStorage, ref, getDownloadURL, uploadBytes } from "firebase/storage";
-import { app, db } from "../../firebase/firebase.config";
+import { app, db } from "../firebase/firebase.config";
 
 import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../../context/authContext";
-
-const MySwal = withReactContent(Swal);
+import { useAuth } from "../context/authContext";
 
 const storage = getStorage(app);
 

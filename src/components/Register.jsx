@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../../context/authContext";
-import "../../styles/main.css";
-import { PrimaryButton } from "../styledComponents/buttons";
+import { useAuth } from "../context/authContext";
+import "../styles/main.css";
+import { PrimaryButton } from "./styledComponents/buttons";
 import {
   Message,
   PrimaryView,
   Title,
-} from "../styledComponents/containers/PrimaryView";
+} from "./styledComponents/containers/PrimaryView";
 
 export const Register = () => {
   const navigate = useNavigate();
