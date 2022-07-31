@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/tech-registration-system/static/css/main.087edabb.css",
-    "main.js": "/tech-registration-system/static/js/main.16873b99.js",
-    "static/media/background.jpg": "/tech-registration-system/static/media/background.2adf790efbf7e79acff5.jpg",
-    "static/media/camara.png": "/tech-registration-system/static/media/camara.aca084eb1423b7a86333.png",
-    "static/media/trash.png": "/tech-registration-system/static/media/trash.fa7887ac547cd590dcbf.png",
-    "index.html": "/tech-registration-system/index.html",
-    "main.087edabb.css.map": "/tech-registration-system/static/css/main.087edabb.css.map",
-    "main.16873b99.js.map": "/tech-registration-system/static/js/main.16873b99.js.map"
+    "main.css": "/tech-products-crud/static/css/main.73ea1df0.css",
+    "main.js": "/tech-products-crud/static/js/main.e2967b54.js",
+    "static/media/background.jpg": "/tech-products-crud/static/media/background.2adf790efbf7e79acff5.jpg",
+    "static/media/camara.png": "/tech-products-crud/static/media/camara.aca084eb1423b7a86333.png",
+    "static/media/trash.png": "/tech-products-crud/static/media/trash.fa7887ac547cd590dcbf.png",
+    "index.html": "/tech-products-crud/index.html",
+    "main.73ea1df0.css.map": "/tech-products-crud/static/css/main.73ea1df0.css.map",
+    "main.e2967b54.js.map": "/tech-products-crud/static/js/main.e2967b54.js.map"
   },
   "entrypoints": [
-    "static/css/main.087edabb.css",
-    "static/js/main.16873b99.js"
+    "static/css/main.73ea1df0.css",
+    "static/js/main.e2967b54.js"
   ]
 }
