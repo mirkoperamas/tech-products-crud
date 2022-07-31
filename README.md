@@ -1,17 +1,25 @@
-# Technology Registration System
+## tech-products-crud
 
-Registry system for technological products with the functions of creating, deleting and editing a registry.
+TODO list style tech product registration system with the functions of creating, deleting, editing a record stored in Firebase.
 
-### Tools
+<br />
 
-React: 18.1.0 -
-Firebase: 9.8.1 -
-Styled Components: 5.3.5 -
-React Router Dom: 6.3.0 -
-sweetalert2-react-content: 5.0.0
+### Tools:
 
-**Note: Create with create-react-app and yarn**
+    React
+    Firebase
+    Styled Components
+    SweetAlert2
 
-#### Credits
+### Run Project:
 
-Designed by: MPeardev.
+    yarn
+    yarn dev
+
+### Deployed:
+
+###### — View page on [StackBlitz.](https://mirkoperamas.github.io/tech-products-crud)
+
+<br />
+
+_By: MPearDev_
