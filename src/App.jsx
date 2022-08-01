@@ -2,12 +2,6 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider } from "./context/authContext";
 import { SecureRoutes } from "./containers/SecureRoutes";
-// import { Login } from "./components/Login/Login";
-// import { Register } from "./components/Register/Register";
-// import { AddProduct } from "./components/AddProduct/AddProduct";
-// import { EditProduct } from "./components/EditProduct/EditProduct";
-// import { ProductsList } from "./components/ProductsList/ProductsList";
-// import { UserProducts } from "./components/UserProducts/UserProducts";
 import {
   Login,
   Register,
